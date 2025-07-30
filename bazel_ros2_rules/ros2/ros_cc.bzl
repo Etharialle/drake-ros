@@ -1,17 +1,17 @@
 # -*- python -*-
 
-load("//tools:ament_index.bzl", "AmentIndex")
+load("@bazel_ros2_rules//ros2/tools:ament_index.bzl", "AmentIndex")
 load(
-    "//tools:common.bzl",
+    "@bazel_ros2_rules//ros2/tools:common.bzl",
     "incorporate_rmw_implementation",
 )
 load(
-    "//tools:dload_cc.bzl",
+    "@bazel_ros2_rules//ros2/tools:dload_cc.bzl",
     "dload_cc_ldwrap",
     "dload_cc_reexec",
 )
 load(
-    "//tools:kwargs.bzl",
+    "@bazel_ros2_rules//ros2/tools:kwargs.bzl",
     "filter_to_only_common_kwargs",
     "remove_test_specific_kwargs",
 )
